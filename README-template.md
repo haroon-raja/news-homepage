@@ -16,12 +16,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshot
 
 ![](./screenshots/desktop.png)
+![](./screenshots/mobile-menu.png)
 ![](./screenshots/mobile.jpg)
 
 ### Links
 
-- Solution URL: [https://github.com/haroon-raja/four-card-feature-section](https://github.com/haroon-raja/four-card-feature-section)
-- Live Site URL: [https://haroon-raja.github.io/four-card-feature-section/](https://haroon-raja.github.io/four-card-feature-section/)
+- Solution URL: [https://github.com/haroon-raja/news-homepage](https://github.com/haroon-raja/news-homepage)
+- Live Site URL: [https://haroon-raja.github.io/news-homepage/](https://haroon-raja.github.io/news-homepage/)
 
 ## My process
 

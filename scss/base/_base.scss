@@ -1,0 +1,36 @@
+@use '../utils' as *;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 rem(5) rgba($primary-2, 0.5);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: min(calc(100% - rem(32)), rem(1110));
+  margin-inline: auto;
+}

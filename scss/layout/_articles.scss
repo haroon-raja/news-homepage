@@ -1,0 +1,48 @@
+@use '../utils/' as *;
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+
+  @include breakpoint-mobile(medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__article {
+    display: flex;
+    gap: rem(18);
+    align-items: center;
+
+    &-img {
+      width: rem(100);
+      object-fit: cover;
+    }
+
+    &-number {
+      font-size: rem(32);
+      font-weight: 700;
+      color: $text-1;
+      line-height: rem(32);
+      margin-bottom: rem(12);
+    }
+
+    &-link {
+      &:link,
+      &:visited {
+        color: $dark-blue;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        color: $primary-2;
+      }
+    }
+
+    &-text {
+      font-size: rem(15);
+      line-height: rem(26);
+      color: $text-2;
+    }
+  }
+}

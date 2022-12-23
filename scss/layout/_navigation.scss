@@ -1,0 +1,51 @@
+@use '../utils/' as *;
+.header-navigation {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+    font-size: rem(15);
+    transition: all 0.3s ease-in;
+
+    @include breakpoint-desktop(small) {
+      position: fixed;
+      z-index: 10;
+      inset: 0 0 0 30%; // Short hand for top, right, bottom, left
+      background-color: $off-white;
+      flex-direction: column;
+      gap: rem(24);
+      padding: rem(140) rem(24);
+      align-items: start;
+      transform: translateX(100%);
+      visibility: hidden;
+      height: 100vh;
+
+      &[data-visible='true'] {
+        transform: translateX(0);
+        visibility: visible;
+      }
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $text-2;
+      line-height: rem(26);
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: $primary-2;
+    }
+  }
+}
+
+.navigation-bg {
+  @include breakpoint-desktop(small) {
+    background-color: rgba($dark-blue, 0.7);
+    inset: 0 0;
+    position: fixed;
+    height: 100vh;
+  }
+}

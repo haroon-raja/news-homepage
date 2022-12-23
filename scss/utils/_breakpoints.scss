@@ -1,0 +1,17 @@
+@use 'functions' as *;
+
+@mixin breakpoint-desktop($breakpoint) {
+  @if $breakpoint == small {
+    @media screen and (max-width: em(560)) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-mobile($breakpoint) {
+  @if $breakpoint == medium {
+    @media screen and (min-width: em(900)) {
+      @content;
+    }
+  }
+}

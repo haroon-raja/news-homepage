@@ -1,0 +1,31 @@
+@use '../utils' as *;
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: $off-white;
+}
+
+.heading-primary {
+  font-size: rem(40);
+  font-size: clamp(rem(40), rem(34.24) + 1.5vw, rem(56));
+  color: $dark-blue;
+  line-height: rem(40);
+  line-height: clamp(rem(40), rem(34.24) + 1.5vw, rem(56));
+  font-weight: 800;
+}
+
+.heading-secondary {
+  font-size: rem(20);
+  line-height: rem(24);
+  font-weight: 800;
+  color: $off-white;
+}
+
+.heading-tertiary {
+  font-size: rem(18);
+  font-weight: 800;
+  color: $dark-blue;
+  line-height: rem(24);
+  margin-bottom: rem(9);
+}

@@ -1,0 +1,43 @@
+@use '../utils/' as *;
+.btn {
+  &:link,
+  &:visited {
+    font-size: rem(14);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: rem(4.38);
+    line-height: rem(24);
+    color: $off-white;
+    background-color: $primary-2;
+    display: inline-block;
+    padding: rem(15) rem(35);
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+// NAV MOBILE TOGGLE BUTTON
+.nav-toggle {
+  display: none;
+  @include breakpoint-desktop(small) {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    top: rem(36);
+    right: rem(32);
+    border: none;
+    background-image: url(../images/icon-menu.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: rem(32);
+    aspect-ratio: 1;
+
+    &[aria-expanded='true'] {
+      background-image: url(../images/icon-menu-close.svg);
+      position: fixed;
+    }
+  }
+}

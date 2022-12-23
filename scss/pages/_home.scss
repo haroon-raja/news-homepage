@@ -1,0 +1,40 @@
+@use '../utils/' as *;
+// HEADER
+.header {
+  padding: rem(30) 0;
+}
+
+// MAIN
+main {
+  margin-bottom: rem(64);
+}
+
+// HERO-SIDE
+.hero-side {
+  @include breakpoint-mobile(medium) {
+    margin-bottom: rem(64);
+  }
+}
+
+// HERO
+.hero {
+  margin-bottom: rem(64);
+
+  @include breakpoint-mobile(medium) {
+    margin-bottom: 0;
+  }
+}
+
+// SIDEBAR
+.sidebar {
+  margin-bottom: rem(64);
+
+  @include breakpoint-mobile(medium) {
+    margin-bottom: 0;
+  }
+}
+
+// FOOTER
+.footer {
+  padding-bottom: rem(64);
+}

@@ -1,0 +1,43 @@
+@use '../utils/' as *;
+.sidebar {
+  background-color: $dark-blue;
+  padding: rem(24) rem(20);
+
+  &__new {
+    color: $primary-1;
+    font-size: rem(32);
+    font-size: clamp(rem(32), rem(29.12) + 0.7511737089201878vw, rem(40));
+    font-weight: 700;
+    margin-bottom: rem(35);
+  }
+
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+
+    &-link {
+      &:link,
+      &:visited {
+        color: $off-white;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        color: $primary-1;
+      }
+    }
+
+    &-text {
+      font-size: rem(15);
+      line-height: rem(26);
+      color: $text-1;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $text-2;
+      margin-bottom: rem(30);
+      padding-bottom: rem(30);
+    }
+  }
+}

@@ -34,3 +34,7 @@ ul {
   max-width: min(calc(100% - rem(32)), rem(1110));
   margin-inline: auto;
 }
+
+.hidden {
+  visibility: hidden;
+}

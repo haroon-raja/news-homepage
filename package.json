@@ -7,7 +7,7 @@
     "watch-sass": "sass scss/style.scss css/style.css -w",
     "dev-server": "live-server",
     "start": "npm-run-all --parallel watch-sass dev-server",
-    "build": "sass scss/style.scss css/style.css --style=compressed"
+    "compress-css": "sass scss/style.scss css/style.css --style=compressed"
   },
   "keywords": [],
   "author": "Haroon Mustafa",
